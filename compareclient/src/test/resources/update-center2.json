@@ -1,0 +1,482 @@
+updateCenter.post(
+ {
+   "id": "default",
+   "connectionCheckUrl": "http://www.google.com/",
+   "plugins":    {
+     "JdtdExecutor":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels":        [
+         "builder",
+         "Testing"
+       ],
+       "name": "JdtdExecutor",
+       "url": "http://host:8080/UpdateCenter/JdtdExecutor.hpi",
+       "version": "2.2.130"
+     },
+     "LastRunColumn":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["ui"],
+       "name": "LastRunColumn",
+       "url": "http://host:8080/UpdateCenter/LastRunColumn.hpi",
+       "version": "1.0.2"
+     },
+     "findbugs":      {
+       "requiredCore": "1.304",
+       "dependencies": [       {
+         "optional": false,
+         "name": "maven-plugin",
+         "version": "1.304"
+       }],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "findbugs",
+       "url": "http://host:8080/UpdateCenter/findbugs.hpi",
+       "version": "3.8"
+     },
+     "p4":      {
+       "requiredCore": "1.339",
+       "dependencies": [],
+       "labels": ["scm"],
+       "name": "p4",
+       "url": "http://host:8080/UpdateCenter/p4.hpi",
+       "version": "1.20.6"
+     },
+     "EmmaLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels": ["ui"],
+       "name": "EmmaLogColumn",
+       "url": "http://host:8080/UpdateCenter/EmmaLogColumn.hpi",
+       "version": "1.0.3"
+     },
+     "locale":      {
+       "requiredCore": "1.236",
+       "dependencies": [],
+       "labels": ["ui"],
+       "name": "locale",
+       "url": "http://host:8080/UpdateCenter/locale.hpi",
+       "version": "1.0"
+     },
+     "Credentials":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["user"],
+       "name": "Credentials",
+       "url": "http://host:8080/UpdateCenter/Credentials.hpi",
+       "version": "1.9.1"
+     },
+     "email-ext":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["notifier"],
+       "name": "email-ext",
+       "url": "http://host:8080/UpdateCenter/email-ext.hpi",
+       "version": "1.13.1"
+     },
+     "wipeworkspaceonallnodes":      {
+       "requiredCore": "1.391",
+       "dependencies": [],
+       "name": "wipeworkspaceonallnodes",
+       "url": "http://host:8080/UpdateCenter/wipeworkspaceonallnodes.hpi",
+       "version": "1.0"
+     },
+     "x509security":      {
+       "requiredCore": "1.339",
+       "dependencies": [],
+       "labels": ["user"],
+       "name": "x509security",
+       "url": "http://host:8080/UpdateCenter/x509security.hpi",
+       "version": "1.0.4"
+     },
+     "SyncTool":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "p4",
+         "version": "1.20.5"
+       }],
+       "labels": ["scm"],
+       "name": "SyncTool",
+       "url": "http://host:8080/UpdateCenter/SyncTool.hpi",
+       "version": "1.20.5"
+     },
+     "active-directory":      {
+       "requiredCore": "1.306",
+       "dependencies": [],
+       "labels": ["user"],
+       "name": "active-directory",
+       "url": "http://host:8080/UpdateCenter/active-directory.hpi",
+       "version": "1.13"
+     },
+     "pmd":      {
+       "requiredCore": "1.304",
+       "dependencies": [       {
+         "optional": false,
+         "name": "maven-plugin",
+         "version": "1.304"
+       }],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "pmd",
+       "url": "http://host:8080/UpdateCenter/pmd.hpi",
+       "version": "2.8"
+     },
+     "locks-ext":      {
+       "requiredCore": "1.318",
+       "dependencies": [],
+       "labels":        [
+         "trigger",
+         "buildwrapper"
+       ],
+       "name": "locks-ext",
+       "url": "http://host:8080/UpdateCenter/locks-ext.hpi",
+       "version": "0.6.0"
+     },
+     "SystematicWarningsScan":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["report"],
+       "name": "SystematicWarningsScan",
+       "url": "http://host:8080/UpdateCenter/SystematicWarningsScan.hpi",
+       "version": "1.0.6"
+     },
+     "warnings":      {
+       "requiredCore": "1.304",
+       "dependencies": [       {
+         "optional": false,
+         "name": "maven-plugin",
+         "version": "1.304"
+       }],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "warnings",
+       "url": "http://host:8080/UpdateCenter/warnings.hpi",
+       "version": "2.8"
+     },
+     "JaproLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels": ["ui"],
+       "name": "JaproLogColumn",
+       "url": "http://host:8080/UpdateCenter/JaproLogColumn.hpi",
+       "version": "1.0.3"
+     },
+     "PredecessorCheckPlugin":      {
+       "requiredCore": "1.323",
+       "dependencies": [],
+       "labels": ["buildwrapper"],
+       "name": "PredecessorCheckPlugin",
+       "url": "http://host:8080/UpdateCenter/PredecessorCheckPlugin.hpi",
+       "version": "1.0"
+     },
+     "QueueOptimization":      {
+       "requiredCore": "1.395",
+       "dependencies": [],
+       "labels": ["Internal"],
+       "name": "QueueOptimization",
+       "url": "http://host:8080/UpdateCenter/QueueOptimization.hpi",
+       "version": "1.17.2"
+     },
+     "LogColumn":      {
+       "requiredCore": "1.395",
+       "dependencies": [],
+       "labels": ["ui"],
+       "name": "LogColumn",
+       "url": "http://host:8080/UpdateCenter/LogColumn.hpi",
+       "version": "1.0.7"
+     },
+     "UpdateWrapper-JDTD":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["Testing"],
+       "name": "UpdateWrapper-JDTD",
+       "url": "http://host:8080/UpdateCenter/UpdateWrapper-JDTD.hpi",
+       "version": "2.2.130"
+     },
+     "TbsP4CredentialsProvider":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "p4",
+         "version": "1.19.14"
+       }],
+       "name": "TbsP4CredentialsProvider",
+       "url": "http://host:8080/UpdateCenter/TbsP4CredentialsProvider.hpi",
+       "version": "1.19.0"
+     },
+     "TBSBranding":      {
+       "requiredCore": "1.316",
+       "dependencies": [],
+       "name": "TBSBranding",
+       "url": "http://host:8080/UpdateCenter/TBSBranding.hpi",
+       "version": "1.18.3"
+     },
+     "AtsExecutor":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels":        [
+         "builder",
+         "Testing"
+       ],
+       "name": "AtsExecutor",
+       "url": "http://host:8080/UpdateCenter/AtsExecutor.hpi",
+       "version": "2.0"
+     },
+     "UpdateCenter":      {
+       "requiredCore": "1.339",
+       "dependencies": [],
+       "labels": ["Internal"],
+       "name": "UpdateCenter",
+       "url": "http://host:8080/UpdateCenter/UpdateCenter.hpi",
+       "version": "1.15.0"
+     },
+     "tasks":      {
+       "requiredCore": "1.304",
+       "dependencies": [       {
+         "optional": false,
+         "name": "maven-plugin",
+         "version": "1.304"
+       }],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "tasks",
+       "url": "http://host:8080/UpdateCenter/tasks.hpi",
+       "version": "3.8"
+     },
+     "UpdateWrapper-ATS":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["Testing"],
+       "name": "UpdateWrapper-ATS",
+       "url": "http://host:8080/UpdateCenter/UpdateWrapper-ATS.hpi",
+       "version": "1.11.1"
+     },
+     "UpdateWrapper-TBSCore":      {
+       "requiredCore": "1.395",
+       "dependencies":        [
+                  {
+           "optional": false,
+           "name": "HudsonAPIWrapperPlugin",
+           "version": "1.17.0"
+         },
+                  {
+           "optional": false,
+           "name": "TBSBranding",
+           "version": "1.18.3"
+         },
+                  {
+           "optional": false,
+           "name": "QueueOptimization",
+           "version": "1.17.2"
+         },
+                  {
+           "optional": false,
+           "name": "locks-ext",
+           "version": "0.6.0"
+         },
+                  {
+           "optional": false,
+           "name": "p4",
+           "version": "1.20.4"
+         },
+                  {
+           "optional": false,
+           "name": "TbsP4CredentialsProvider",
+           "version": "1.19.0"
+         },
+                  {
+           "optional": false,
+           "name": "SyncTool",
+           "version": "1.20.4"
+         },
+                  {
+           "optional": false,
+           "name": "AtsExecutor",
+           "version": "2.0"
+         },
+                  {
+           "optional": false,
+           "name": "JdtdExecutor",
+           "version": "2.2.130"
+         },
+                  {
+           "optional": false,
+           "name": "LastRunColumn",
+           "version": "1.0.2"
+         },
+                  {
+           "optional": false,
+           "name": "LogColumn",
+           "version": "1.0.7"
+         },
+                  {
+           "optional": false,
+           "name": "ConsoleLogColumn",
+           "version": "1.0.3"
+         },
+                  {
+           "optional": false,
+           "name": "x509security",
+           "version": "1.0.4"
+         }
+       ],
+       "labels": ["Internal"],
+       "name": "UpdateWrapper-TBSCore",
+       "url": "http://host:8080/UpdateCenter/UpdateWrapper-TBSCore.hpi",
+       "version": "1.18.0"
+     },
+     "Timestamp":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels": ["Internal"],
+       "name": "Timestamp",
+       "url": "http://host:8080/UpdateCenter/Timestamp.hpi",
+       "version": "1.9.1"
+     },
+     "JobDependencyGraph":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels":        [
+         "ui",
+         "report"
+       ],
+       "name": "JobDependencyGraph",
+       "url": "http://host:8080/UpdateCenter/JobDependencyGraph.hpi",
+       "version": "0.9.1"
+     },
+     "ConsoleLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels": ["ui"],
+       "name": "ConsoleLogColumn",
+       "url": "http://host:8080/UpdateCenter/ConsoleLogColumn.hpi",
+       "version": "1.0.3"
+     },
+     "jlin":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "jlin",
+       "url": "http://host:8080/UpdateCenter/jlin.hpi",
+       "version": "1.9.1"
+     },
+     "checkstyle":      {
+       "requiredCore": "1.304",
+       "dependencies": [       {
+         "optional": false,
+         "name": "maven-plugin",
+         "version": "1.304"
+       }],
+       "labels":        [
+         "maven",
+         "report"
+       ],
+       "name": "checkstyle",
+       "url": "http://host:8080/UpdateCenter/checkstyle.hpi",
+       "version": "2.10"
+     },
+     "HudsonAPIWrapperPlugin":      {
+       "requiredCore": "1.339",
+       "dependencies": [],
+       "labels": ["Internal"],
+       "name": "HudsonAPIWrapperPlugin",
+       "url": "http://host:8080/UpdateCenter/HudsonAPIWrapperPlugin.hpi",
+       "version": "1.17.0"
+     },
+     "JDTDLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels":        [
+         "ui",
+         "Testing"
+       ],
+       "name": "JDTDLogColumn",
+       "url": "http://host:8080/UpdateCenter/JDTDLogColumn.hpi",
+       "version": "1.0.3"
+     },
+     "ATSLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels":        [
+         "ui",
+         "Testing"
+       ],
+       "name": "ATSLogColumn",
+       "url": "http://host:8080/UpdateCenter/ATSLogColumn.hpi",
+       "version": "1.0.3"
+     },
+     "disk-usage":      {
+       "requiredCore": "1.307",
+       "dependencies": [],
+       "labels": ["report"],
+       "name": "disk-usage",
+       "url": "http://host:8080/UpdateCenter/disk-usage.hpi",
+       "version": "0.9"
+     },
+     "VivaPlugin":      {
+       "requiredCore": "1.310",
+       "dependencies": [],
+       "labels":        [
+         "builder",
+         "Testing"
+       ],
+       "name": "VivaPlugin",
+       "url": "http://host:8080/UpdateCenter/VivaPlugin.hpi",
+       "version": "1.14.1"
+     },
+     "JLinLogColumn":      {
+       "requiredCore": "1.339",
+       "dependencies": [       {
+         "optional": false,
+         "name": "LogColumn",
+         "version": "1.0.7"
+       }],
+       "labels":        [
+         "ui",
+         "Testing"
+       ],
+       "name": "JLinLogColumn",
+       "url": "http://host:8080/UpdateCenter/JLinLogColumn.hpi",
+       "version": "1.0.3"
+     }
+   },
+   "core":    {
+     "name": "core",
+     "url": "http://host:8080/UpdateCenter/hudson.war",
+     "version": "1.395.1"
+   },
+   "updateCenterVersion": "1"
+ });
